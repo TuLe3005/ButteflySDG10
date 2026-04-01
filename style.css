@@ -1,0 +1,243 @@
+/* Info Button Styles */
+#info-btn {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #222;
+  color: #fff;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: background 0.2s;
+  font-family: "DM Sans", sans-serif;
+}
+#info-btn:hover {
+  background: #444;
+}
+
+/* Info Modal Styles */
+#info-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+#info-modal.hidden {
+  display: none;
+}
+.info-modal-content {
+  background: rgba(30,30,30,0.98);
+  color: #fff;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 16px;
+  max-width: 540px;
+  width: 90vw;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.4);
+  font-size: 1.08rem;
+  line-height: 1.6;
+  position: relative;
+}
+.info-modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-size: 1.3em;
+}
+.info-modal-content blockquote {
+  margin: 1.2em 0;
+  padding-left: 1em;
+  border-left: 3px solid #fff;
+  font-style: italic;
+  color: #eee;
+}
+.info-modal-content footer {
+  font-size: 0.95em;
+  color: #ccc;
+  margin-top: 0.5em;
+}
+#close-info {
+  margin-top: 1.5em;
+  padding: 0.5em 1.5em;
+  background: #fff;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+#close-info:hover {
+  background: #222;
+  color: #fff;
+}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, black, #D1E5F0);
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  position: relative;
+  isolation: isolate;
+}
+
+main {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  color: #ffffff;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+canvas {
+  display: block;
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.title {
+  position: relative; 
+  text-align: left; 
+  font-family: "DM Sans", sans-serif;
+}
+#tittle {
+  font-size: clamp(24px, 1vw, 32px);   
+  color: #D16297;
+  margin-bottom: 0px; 
+  margin-top: 0px; 
+}
+#subtitle {
+  color: #585858;
+  font-size: clamp(24px, 1vw, 32px); 
+  margin-top: 0; 
+  margin-bottom: 0; 
+}
+
+.description {
+  position: absolute;
+  bottom: clamp(16px, 1vh, 40px); 
+  left: 40px;
+  top: 3vh; 
+  text-align: left; 
+  font-family: "DM Sans", sans-serif;
+}
+
+#cta1 {
+  margin: 0; 
+  font-size: clamp(32px, 2vw, 64px);   
+  color: #D16297;
+}
+#cta2 {
+  color: #585858;
+  font-size: clamp(32px, 2vw, 64px); 
+}
+#quote {
+  margin-top: 20px; 
+  font-size: clamp(12px, 2vw, 16px); 
+  max-width: 600px; 
+}
+
+#blurRect {
+  position: absolute;
+  top: -10vh; 
+  left: -50vw; 
+  height: 30vh; 
+  width: 100%;    
+  background-color: #131313; 
+  filter:blur(100px);
+}
+
+#blurRect2 {
+  transform: rotate(25deg);
+  position: absolute;
+  bottom: -30vh;
+  left: -10vw;  
+  height: 45vh; 
+  width: 100%;    
+  background-color: #131313; 
+  filter:blur(140px);
+}
+
+#blurRect3 {
+  transform: rotate(-25deg);
+  position: absolute;
+  bottom: -30vh;
+  right: -10vw;  
+  height: 45vh; 
+  width: 100%;    
+  background-color: #131313; 
+  filter:blur(140px);
+}
+
+.top, .bottom {
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(12px, 1vw, 24px); 
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 65vh;
+  width: 100vw; 
+  color: #D16297;
+}
+
+.top {
+  top: 18vh; 
+}
+
+.bottom {
+  bottom: 18vh; 
+}
+
+#note {
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(12px, 1vw, 16px); 
+  position: relative; 
+  transform: translate(90vw, 83vh);
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.75vh;
+}
+
+.highlight {
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(12px, 1vw, 16px);
+  color: #D16297;
+}
+
+#quote {
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(12px, 1vw, 16px);
+  position: absolute;
+  bottom: 5vh;
+}
+#instruction {
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(12px, 1vw, 16px);
+  position: absolute;
+  top: 18vh;
+  color: white; 
+}

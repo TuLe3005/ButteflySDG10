@@ -1,0 +1,76 @@
+<!-- The AI was used to assist with coding and debugging, but all final decisions and implementations were made by the human developers. We acknowledge the role of AI as a tool in our creative process, while emphasizing that the vision, design, and execution of this project were driven by human creativity and judgment. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+  </head>
+  <body>
+      <!-- Info Button -->
+      <button id="info-btn" title="About this project">i</button>
+      <!-- Info Modal -->
+      <div id="info-modal" class="hidden">
+        <div class="info-modal-content">
+          <h2>About us</h2>
+          <p><strong>Duolingo</strong><br>
+          Le Tran Thanh Tu - s4088575<br>
+          Nguyen Quynh Huong - s4051864</p>
+          <p>COMM2754: Digital Media Specialisation 1, 2026<br>
+          RMIT University Vietnam, Saigon South Campus, School of Communication and Design, Digital Media Program.</p>
+          <p>27 March 2026</p>
+          <h2>About the project</h2>
+          <p><strong>SDG 10:</strong> Reduce inequality within and among countries</p>
+          <blockquote>
+            <p>"Injustice anywhere is a threat to justice everywhere. We are caught in an inescapable network of mutuality, tied in a single garment of destiny. Whatever affects one directly, affects all indirectly."</p>
+            <footer>— Martin Luther King Jr<br>
+            <em>Letter for Birmingham Jail, Birmingham, Alabama, on April 16, 1963.</em></footer>
+          </blockquote>
+          <p>Highlighting the interconnected nature of our communities, the quote by <strong>Martin Luther King Jr.</strong> strongly reflects the vision of the United Nations’s Sustainable Development Goal 10: Reduced Inequalities, which promotes fair access to opportunities, resources, and rights for everyone. Society cannot truly develop if prosperity is limited to only a small number of people while others remain disadvantaged. When inequality persists, it weakens the balance and progress of the entire community. Likewise, when opportunities are unequal, it indicates that the system is failing, not the individual. Therefore, to build a sustainable future, we must move beyond merely sympathizing with those who are disadvantaged and instead work toward creating systems where opportunities and resources are distributed more fairly.</p>
+          <p><strong>Call To Action:</strong> Close the gap and open opportunities for all.</p>
+          <button id="close-info">Close</button>
+        </div>
+      </div>
+    <main>
+      <div id = "blurRect"></div>
+      <div id = "blurRect2"></div>
+      <div id = "label">
+        <div class = "top">
+          <p>Education</p>
+          <p>Health</p>
+        </div>
+        <div class = "bottom">
+          <p>Employment</p>
+          <p>Housing</p>    
+        </div>
+      </div>
+      <div class="description">
+        <h2 ><span id = "cta1">CLOSE</span><span id = "cta2"> THE GAP</span></h2> 
+        <h2 ><span id = "cta1">OPEN</span> <span id = "cta2"> OPPORTUNITIES FOR ALL</span></h2>
+      </div>
+      <div id="instruction">
+        <p>[&#8593;]: Expand opportunities</p>
+        <p>[&#8595;]: Constrain opportunities</p>
+        <p>[Mouse hold]: Static</p>
+      </div>
+      <div id="note">
+        <div class = "pinkNote">High income</div>
+        <div class = "yellowNote">Average income</div>
+        <div class = "greenNote">Low income</div>
+      </div>
+
+      <p id = "quote"><i><span>"Injustice anywhere is a threat to justice everywhere. We are caught in an inescapable network of mutuality, tied in a single garment of destiny.</span><span class = "highlight"><b> Whatever affects one directly, affects all indirectly."</b></i></span></p>
+    </main>
+    <div></div>
+    <script src="sketch.js"></script>
+    <script src="blurSketch.js"></script>
+    <script src="butterfly.js"></script>
+    <script src="circle.js"></script>
+    <script src="delay.js"></script>
+    <script src="grass.js"></script>
+    <script src="note.js"></script>
+    <script src="mouse.js"></script>
+  </body>
+  </html>
+</html>
